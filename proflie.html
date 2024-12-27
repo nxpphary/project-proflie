@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aqua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-lg">
+        <div class="flex-1">
+          <a class="btn bg-greay-400">daisyUI</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="c:\Users\IT-Lab2-00\Pictures\img.ariana.glinda.jpg" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a href="/profliename.html">proflie name</a></li>
+              <li><a href="/ประวัติการศึกษา.html">educational record</a></li>
+              <li><a href="/งานอดิเรก.html">hobby</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <button class="btn bg-pink-500"><i class="fa-solid fa-house"></i></button>
+    <button class="btn bg-violet-250"><i class="fa-solid fa-user"></i></button>
+    <button class="btn bg-red-500"><i class="fa-solid fa-phone"></i></button>
+    <button class="btn bg-green-500"><i class="fa-solid fa-bars"></i></button>
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+</body>
+</html>
